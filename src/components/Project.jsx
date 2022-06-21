@@ -9,9 +9,9 @@ const Project = ({ listItems, title, image, imageHeight, imageWidth }) => {
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: '100% 100%',
-        height: imageHeight * 400 / imageHeight,
-        minHeight: imageHeight * 400 / imageHeight,
-        width: imageWidth * 400 / imageHeight,
+        height: 415,
+        minHeight: 415,
+        width: imageWidth * 415 / imageHeight,
         overflow: 'hidden',
         margin: '1rem',
         ...projectImage,

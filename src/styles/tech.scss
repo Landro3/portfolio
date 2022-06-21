@@ -1,0 +1,70 @@
+.tech > h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.tech-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech-box {
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: $boxShadow;
+  justify-content: center;
+  max-width: 350px;
+  margin: 1rem;
+}
+
+.tech-box > h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.tech-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.tooltiptext {
+  opacity: 0;
+  width: 100px;
+  background-color: $primary;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: -15%;
+  left: 50%;
+  margin-left: -50px;
+  padding: 5px 0;
+  transition: .3s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent $primary transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}

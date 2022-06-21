@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  height: 80vh;
+  width: 100%;
+}
+
+.home-text {
+  padding: 2rem;
+}
+
+.home-text h1 {
+  color: $secondary;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.home-text h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+}

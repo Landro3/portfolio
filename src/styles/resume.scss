@@ -1,0 +1,30 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 3rem;
+}
+
+.resume-button {
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.resume-button:hover {
+  background-color: darken($primary, 2.5%);
+}
+
+.resume-button:hover:active {
+  background-color: darken($primary, 5%);
+  padding: .9rem;
+}
+

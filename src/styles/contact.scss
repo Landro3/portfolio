@@ -1,0 +1,75 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+  transition: .5;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  caret-color: yellow;
+}
+
+.contact h1 {
+  margin: 0;
+}
+
+.contact form label {
+  font-size: 1.25rem;
+  margin-top: .5rem;
+}
+
+.contact form input, .contact form textarea {
+  color: white;
+  background-color: lighten($primary, 5%);
+  border: none;
+  border-radius: 5px;
+  font-family: Verdana;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+  outline: none;
+  padding: 1rem;
+  resize: none;
+  width: 300px;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+  background-color: lighten($primary, 10%);
+}
+
+.contact form button {
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  color: $primary;
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  transition: .3s;
+}
+
+.contact form button:hover {
+  background-color: darken(yellow, 10%);
+}
+
+.contact form button:active {
+  background-color: darken(yellow, 20%);
+}
+
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 550px) {
+  .contact form input, .contact form textarea {
+    width: 500px;
+  }
+}

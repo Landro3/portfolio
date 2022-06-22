@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import LogoImage from './LogoImage';
 
 const TechBox = ({ images, title }) => {
@@ -14,6 +16,11 @@ const TechBox = ({ images, title }) => {
       </div>
     </div>
   );
+};
+
+TechBox.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.object).isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default TechBox;

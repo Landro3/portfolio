@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Project = ({ listItems, title, image, imageHeight, imageWidth }) => {
   const projectImage = {
     borderRadius: '10px',
@@ -29,6 +31,14 @@ const Project = ({ listItems, title, image, imageHeight, imageWidth }) => {
       </div>
     </div>
   );
+};
+
+Project.propTypes = {
+  listItems: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  imageHeight: PropTypes.number.isRequired,
+  imageWidth: PropTypes.number.isRequired
 };
 
 export default Project;

@@ -5,5 +5,28 @@
       "type": "cicd",
       "lastPushTimeStamp": "2022-06-21T01:43:39.452Z"
     }
+  },
+  "function": {
+    "sendContactEmail": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "api": {
+    "api": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "sendContactEmail",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    }
   }
 }

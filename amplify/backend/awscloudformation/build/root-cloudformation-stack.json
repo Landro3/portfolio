@@ -151,6 +151,38 @@
           "Ref": "UnauthRoleName"
         }
       }
+    },
+    "functionsendContactEmail": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-210722-deployment/amplify-cfn-templates/function/sendContactEmail-cloudformation-template.json",
+        "Parameters": {
+          "deploymentBucketName": "amplify-portfolio-dev-210722-deployment",
+          "s3Key": "amplify-builds/sendContactEmail-6a51302b564141626650-build.zip",
+          "env": "dev"
+        }
+      }
+    },
+    "apiapi": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-210722-deployment/amplify-cfn-templates/api/api-cloudformation-template.json",
+        "Parameters": {
+          "functionsendContactEmailName": {
+            "Fn::GetAtt": [
+              "functionsendContactEmail",
+              "Outputs.Name"
+            ]
+          },
+          "functionsendContactEmailArn": {
+            "Fn::GetAtt": [
+              "functionsendContactEmail",
+              "Outputs.Arn"
+            ]
+          },
+          "env": "dev"
+        }
+      }
     }
   }
 }

@@ -18,5 +18,59 @@
       "type": "cicd",
       "lastPushTimeStamp": "2022-06-21T01:43:39.452Z"
     }
+  },
+  "function": {
+    "sendContactEmail": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2022-06-22T16:30:17.522Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-06-22T16:30:17.554Z",
+      "distZipFilename": "sendContactEmail-6a51302b564141626650-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-portfolio-dev-210722-deployment",
+        "s3Key": "amplify-builds/sendContactEmail-6a51302b564141626650-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-210722-deployment/amplify-cfn-templates/function/sendContactEmail-cloudformation-template.json",
+        "logicalId": "functionsendContactEmail"
+      },
+      "lastPushTimeStamp": "2022-06-22T16:40:41.433Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:126166799199:function:sendContactEmail-dev",
+        "Name": "sendContactEmail-dev",
+        "LambdaExecutionRole": "portfolioLambdaRoled1711939-dev"
+      },
+      "lastPushDirHash": "LllEWTRAqmu00q+6QiMaoZQQ0/I="
+    }
+  },
+  "api": {
+    "api": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "sendContactEmail",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-210722-deployment/amplify-cfn-templates/api/api-cloudformation-template.json",
+        "logicalId": "apiapi"
+      },
+      "lastPushTimeStamp": "2022-06-22T16:40:41.434Z",
+      "output": {
+        "ApiName": "api",
+        "RootUrl": "https://xmr5pf14k6.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "xmr5pf14k6"
+      },
+      "lastPushDirHash": "kGlouNaD2HgjhHOIkMDn5YZbCEE="
+    }
   }
 }

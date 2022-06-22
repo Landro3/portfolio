@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { API } from 'aws-amplify';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -6,6 +7,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+
+    API.get('api', '/contact', {}).then((r) => console.log(r));
   };
 
   return (

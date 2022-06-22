@@ -1,22 +1,18 @@
 import PropTypes from 'prop-types';
 
 const Project = ({ listItems, title, image, imageHeight, imageWidth }) => {
-  const projectImage = {
-    borderRadius: '10px',
-    // boxShadow: '0px 1px 1px 1px black',
-  };
-
   return (
     <div
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: '100% 100%',
+        borderRadius: '10px',
+        cursor: 'default',
         height: 415,
         minHeight: 415,
         width: imageWidth * 415 / imageHeight,
         overflow: 'hidden',
         margin: '1rem',
-        ...projectImage,
       }}
     >
       <div className='project-description'>

@@ -5,8 +5,8 @@ const awsmobile = {
     "aws_project_region": "us-east-1",
     "aws_cloud_logic_custom": [
         {
-            "name": "api",
-            "endpoint": "https://xmr5pf14k6.execute-api.us-east-1.amazonaws.com/dev",
+            "name": "contact",
+            "endpoint": "https://xrru920glc.execute-api.us-east-1.amazonaws.com/dev",
             "region": "us-east-1"
         }
     ]

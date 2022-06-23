@@ -8,7 +8,13 @@ const Contact = () => {
     e.preventDefault();
     setSubmitted(true);
 
-    API.get('api', '/contact', {}).then((r) => console.log(r));
+    const values = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value
+    };
+
+    API.post('contact', '/contact', { body: values });
   };
 
   return (
@@ -19,11 +25,11 @@ const Contact = () => {
           <h1>Let's Talk!</h1>
           <form onSubmit={handleSubmit}>
             <label htmlFor='name'>Name</label>
-            <input type='text' id='name' placeholder='name' required />
+            <input type='text' id='name' placeholder='name' defaultValue='a' required />
             <label htmlFor='email'>Email</label>
-            <input type='email' id='email' placeholder='email' required />
+            <input type='email' id='email' placeholder='email' defaultValue='a@b' required />
             <label htmlFor='message'>Message</label>
-            <textarea type='text' id='message' placeholder='message' rows={4} required />
+            <textarea type='text' id='message' placeholder='message' defaultValue='a' rows={4} required />
             <div className='button-div'>
               <button type='submit'>Submit</button>
             </div>

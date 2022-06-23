@@ -25,11 +25,11 @@ const Contact = () => {
           <h1>Let's Talk!</h1>
           <form onSubmit={handleSubmit}>
             <label htmlFor='name'>Name</label>
-            <input type='text' id='name' placeholder='name' defaultValue='a' required />
+            <input type='text' id='name' placeholder='name' required />
             <label htmlFor='email'>Email</label>
-            <input type='email' id='email' placeholder='email' defaultValue='a@b' required />
+            <input type='email' id='email' placeholder='email' required />
             <label htmlFor='message'>Message</label>
-            <textarea type='text' id='message' placeholder='message' defaultValue='a' rows={4} required />
+            <textarea type='text' id='message' placeholder='message' rows={4} required />
             <div className='button-div'>
               <button type='submit'>Submit</button>
             </div>

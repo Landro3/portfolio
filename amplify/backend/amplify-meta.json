@@ -1,22 +1,23 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-portfolio-dev-210722-authRole",
-      "UnauthRoleArn": "arn:aws:iam::126166799199:role/amplify-portfolio-dev-210722-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::126166799199:role/amplify-portfolio-dev-210722-authRole",
+      "AuthRoleName": "amplify-portfolio-dev-134250-authRole",
+      "UnauthRoleArn": "arn:aws:iam::126166799199:role/amplify-portfolio-dev-134250-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::126166799199:role/amplify-portfolio-dev-134250-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-portfolio-dev-210722-deployment",
-      "UnauthRoleName": "amplify-portfolio-dev-210722-unauthRole",
-      "StackName": "amplify-portfolio-dev-210722",
-      "StackId": "arn:aws:cloudformation:us-east-1:126166799199:stack/amplify-portfolio-dev-210722/82077910-f0fe-11ec-a104-128d997be3f7",
-      "AmplifyAppId": "d2q3xj7d7k1eqb"
+      "DeploymentBucketName": "amplify-portfolio-dev-134250-deployment",
+      "UnauthRoleName": "amplify-portfolio-dev-134250-unauthRole",
+      "StackName": "amplify-portfolio-dev-134250",
+      "StackId": "arn:aws:cloudformation:us-east-1:126166799199:stack/amplify-portfolio-dev-134250/bcfe1150-f252-11ec-9ea1-0a008164ccb3",
+      "AmplifyAppId": "d19j4gf4ymoioa"
     }
   },
   "hosting": {
     "amplifyhosting": {
       "service": "amplifyhosting",
       "type": "cicd",
-      "lastPushTimeStamp": "2022-06-21T01:43:39.452Z"
+      "lastPushTimeStamp": "2022-06-22T17:57:59.685Z",
+      "cicd": "cicd"
     }
   },
   "function": {
@@ -24,30 +25,30 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
-      "lastBuildTimeStamp": "2022-06-22T16:30:17.522Z",
-      "lastBuildType": "PROD",
-      "lastPackageTimeStamp": "2022-06-22T16:30:17.554Z",
-      "distZipFilename": "sendContactEmail-6a51302b564141626650-build.zip",
-      "s3Bucket": {
-        "deploymentBucketName": "amplify-portfolio-dev-210722-deployment",
-        "s3Key": "amplify-builds/sendContactEmail-6a51302b564141626650-build.zip"
-      },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-210722-deployment/amplify-cfn-templates/function/sendContactEmail-cloudformation-template.json",
-        "logicalId": "functionsendContactEmail"
-      },
-      "lastPushTimeStamp": "2022-06-22T16:40:41.433Z",
       "output": {
         "Region": "us-east-1",
         "Arn": "arn:aws:lambda:us-east-1:126166799199:function:sendContactEmail-dev",
         "Name": "sendContactEmail-dev",
         "LambdaExecutionRole": "portfolioLambdaRoled1711939-dev"
       },
-      "lastPushDirHash": "LllEWTRAqmu00q+6QiMaoZQQ0/I="
+      "lastPushTimeStamp": "2022-06-23T17:12:48.975Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-134250-deployment/amplify-cfn-templates/function/sendContactEmail-cloudformation-template.json",
+        "logicalId": "functionsendContactEmail"
+      },
+      "lastBuildTimeStamp": "2022-06-23T17:11:45.714Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-06-23T17:11:45.926Z",
+      "distZipFilename": "sendContactEmail-786f505943526d59766b-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-portfolio-dev-134250-deployment",
+        "s3Key": "amplify-builds/sendContactEmail-786f505943526d59766b-build.zip"
+      },
+      "lastPushDirHash": "lhtITsWqT9byoOIrekNbqsjSiuE="
     }
   },
   "api": {
-    "api": {
+    "contact": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
@@ -61,16 +62,17 @@
         }
       ],
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-210722-deployment/amplify-cfn-templates/api/api-cloudformation-template.json",
-        "logicalId": "apiapi"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-134250-deployment/amplify-cfn-templates/api/contact-cloudformation-template.json",
+        "logicalId": "apicontact"
       },
-      "lastPushTimeStamp": "2022-06-22T16:40:41.434Z",
+      "lastPushTimeStamp": "2022-06-23T17:12:48.818Z",
       "output": {
-        "ApiName": "api",
-        "RootUrl": "https://xmr5pf14k6.execute-api.us-east-1.amazonaws.com/dev",
-        "ApiId": "xmr5pf14k6"
+        "ApiName": "contact",
+        "RootUrl": "https://xrru920glc.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "xrru920glc"
       },
-      "lastPushDirHash": "kGlouNaD2HgjhHOIkMDn5YZbCEE="
+      "lastPushDirHash": "hAZ0UzmJhbQUlevQP4mgt61+xKs="
     }
-  }
+  },
+  "auth": {}
 }

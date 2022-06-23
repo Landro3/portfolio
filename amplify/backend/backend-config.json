@@ -14,7 +14,7 @@
     }
   },
   "api": {
-    "api": {
+    "contact": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
@@ -28,5 +28,6 @@
         }
       ]
     }
-  }
+  },
+  "auth": {}
 }

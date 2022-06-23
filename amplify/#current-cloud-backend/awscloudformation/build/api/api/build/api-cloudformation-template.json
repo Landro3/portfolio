@@ -1,5 +1,5 @@
 {
-  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"8.5.1\",\"stackType\":\"api-API Gateway\",\"metadata\":{}}",
+  "Description": "{\"createdOn\":\"Linux\",\"createdBy\":\"Amplify\",\"createdWith\":\"9.0.0\",\"stackType\":\"api-API Gateway\",\"metadata\":{}}",
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
     "functionsendContactEmailName": {
@@ -398,7 +398,7 @@
         }
       }
     },
-    "DeploymentAPIGWapi4e4682ae": {
+    "DeploymentAPIGWapi90e5a36f": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {

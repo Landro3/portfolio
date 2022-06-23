@@ -31,7 +31,7 @@
         "Name": "sendContactEmail-dev",
         "LambdaExecutionRole": "portfolioLambdaRoled1711939-dev"
       },
-      "lastPushTimeStamp": "2022-06-23T17:12:48.975Z",
+      "lastPushTimeStamp": "2022-06-23T17:20:05.307Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-134250-deployment/amplify-cfn-templates/function/sendContactEmail-cloudformation-template.json",
         "logicalId": "functionsendContactEmail"
@@ -65,7 +65,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfolio-dev-134250-deployment/amplify-cfn-templates/api/contact-cloudformation-template.json",
         "logicalId": "apicontact"
       },
-      "lastPushTimeStamp": "2022-06-23T17:12:48.818Z",
+      "lastPushTimeStamp": "2022-06-23T17:20:05.309Z",
       "output": {
         "ApiName": "contact",
         "RootUrl": "https://xrru920glc.execute-api.us-east-1.amazonaws.com/dev",

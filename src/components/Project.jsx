@@ -7,6 +7,7 @@ const Project = ({ listItems, title, image, imageHeight, imageWidth }) => {
         backgroundImage: `url(${image})`,
         backgroundSize: '100% 100%',
         borderRadius: '10px',
+        boxShadow: '0px 2px 2px 1px black',
         cursor: 'default',
         height: 415,
         minHeight: 415,

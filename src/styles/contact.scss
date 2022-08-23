@@ -34,10 +34,11 @@
   padding: 1rem;
   resize: none;
   width: 300px;
+  transition: .2s;
 }
 
 .contact form input:focus, .contact form textarea:focus {
-  background-color: lighten($primary, 10%);
+  background-color: darken($primary, 1%);
 }
 
 .contact form button {
@@ -52,6 +53,7 @@
   padding: .5rem 1rem;
   margin-top: 1rem;
   transition: .3s;
+  box-shadow: $boxShadow;
 }
 
 .contact form button:hover {

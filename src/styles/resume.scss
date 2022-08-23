@@ -8,10 +8,9 @@
 }
 
 .resume-button {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 25px;
   background-color: transparent;
-  color: white;
   font-size: 1.5rem;
   font-weight: 300;
   padding: 1rem;
@@ -20,7 +19,7 @@
 }
 
 .resume-button:hover {
-  background-color: darken($primary, 2.5%);
+  background-color: darken(white, 5%);
 }
 
 .resume-button:hover:active {

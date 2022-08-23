@@ -18,7 +18,7 @@ const Header = () => {
       <img src={logo} alt='logo' height={64} width={64} />
       <div className='dropdown'>
         <ExpandButton
-          fill={'#fafafa'}
+          fill='#000000'
           height='50px'
           width='50px'
           handleClick={handleDropdown}

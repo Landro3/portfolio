@@ -36,8 +36,8 @@ const ExpandButton = ({
     <button onClick={onClick} className={className} style={expandButton}>
       <svg version='1.1' width='100%' height='100%' viewBox='0 0 100 100'>
         <g fill={fill}>
-          <rect x='0' y='42.5' width='100' height='15' rx='5' />
-          <rect x='42.5' y='0' width='15' height='100' rx='5' style={expanded ? { ...vert, ...rotated } : vert} />
+          <rect x='0' y='45' width='100' height='10' rx='5' />
+          <rect x='45' y='0' width='10' height='100' rx='5' style={expanded ? { ...vert, ...rotated } : vert} />
         </g>
       </svg>
     </button>

@@ -13,7 +13,7 @@ const App = () => {
         <Home />
         <Resume />
         <Tech />
-        {window.innerWidth > 720 && <Projects />}
+        <Projects />
         <Contact />
       </div>
     </>

@@ -23,12 +23,12 @@
   margin-left: 2rem;
   cursor: pointer;
   font-size: $largeFont;
-  transition: color .3s;
+  transition: .3s;
   font-weight: 300;
 }
 
 .links > a:hover {
-  color: yellow;
+  transform: translateY(2px);
 }
 
 @media screen and (max-width: 850px) {

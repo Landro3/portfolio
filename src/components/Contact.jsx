@@ -22,7 +22,7 @@ const Contact = () => {
       {submitted && <h1>Thank you!</h1>}
       {!submitted && (
         <>
-          <h1>Let's Talk!</h1>
+          <h1 className='section-title'>Let's Talk!</h1>
           <form onSubmit={handleSubmit}>
             <label htmlFor='name'>Name</label>
             <input type='text' id='name' placeholder='name' required />

@@ -1,10 +1,10 @@
 $primary: #141a26;
 $secondary: white;
 
-$fontColor: #fafafa;
+$fontColor: black;
 $largeFont: 1.75rem;
 
-$boxShadow: 0px 2px 2px 2px black;
+$boxShadow: 0px 2px 5px 1px rgba(70, 70, 70, 0.25);
 
 html {
   scroll-behavior: smooth;
@@ -13,8 +13,6 @@ html {
 body {
   margin: 0;
   font-family: 'Open Sans';
-  color: $fontColor;
-  background-color: $primary;
 }
 
 .app {
@@ -27,6 +25,12 @@ a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
+}
+
+.section-title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 3rem;
 }
 
 @import './header.scss';

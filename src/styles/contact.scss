@@ -9,7 +9,7 @@
 .contact form {
   display: flex;
   flex-direction: column;
-  caret-color: yellow;
+  caret-color: $primary;
 }
 
 .contact h1 {
@@ -23,8 +23,8 @@
 
 .contact form input, .contact form textarea {
   color: white;
-  background-color: lighten($primary, 5%);
-  border: none;
+  background-color: lighten(#f0f0f0, 5%);
+  border: 1px solid $primary;
   border-radius: 5px;
   font-family: Verdana;
   font-size: 1rem;
@@ -38,14 +38,14 @@
 }
 
 .contact form input:focus, .contact form textarea:focus {
-  background-color: darken($primary, 1%);
+  background-color: darken(#f0f0f0, 1%);
 }
 
 .contact form button {
-  background-color: yellow;
+  background-color: $primary;
   border: none;
   border-radius: 5px;
-  color: $primary;
+  color: #f0f0f0;
   cursor: pointer;
   font-family: Verdana;
   font-size: 1rem;
